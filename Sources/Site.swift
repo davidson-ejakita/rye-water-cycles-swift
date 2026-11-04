@@ -17,7 +17,7 @@ struct IgniteWebsite {
 struct RyeWaterSite: Site {
     var name = "Rye Water Cycles"
     var titleSuffix = " · Rye Water Cycles"
-    var url = URL(static: "https://davidson123456789.github.io/rye-water-cycles-swift")
+    var url = URL(static: "https://davidson-ejakita.github.io/rye-water-cycles-swift")
     var author = "Rye Water Cycles"
 
     var homePage = Home()

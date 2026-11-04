@@ -2,7 +2,7 @@
 
 A demo website for a made-up bike repair workshop in Kilcock, Co. Kildare, written in Swift using [Ignite](https://github.com/twostraws/Ignite).
 
-**Live site:** https://davidson123456789.github.io/rye-water-cycles-swift/
+**Live site:** https://davidson-ejakita.github.io/rye-water-cycles-swift/
 
 Ignite lets you describe a web page with SwiftUI-style code. Running the project turns that Swift code into a static HTML website, ready to host anywhere.
 
