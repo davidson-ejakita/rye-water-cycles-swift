@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en" data-light-theme="light" data-dark-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A small bike repair workshop beside the Royal Canal greenway in Kilcock, Co. Kildare." />
+    <meta name="author" content="Rye Water Cycles" />
+    <meta name="generator" content="Ignite v0.6.9" />
+    <title>Bike repairs in Kilcock · Rye Water Cycles</title>
+    <link href="/rye-water-cycles-swift/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/rye-water-cycles-swift/css/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="/rye-water-cycles-swift/css/ignite-core.min.css" rel="stylesheet" />
+    <link href="https://davidson-ejakita.github.io/rye-water-cycles-swift/" rel="canonical" />
+    <link type="application/rss+xml" title="RSS Feed" href="/rye-water-cycles-swift/feed.rss" rel="alternate" />
+    <script>(function() {
+    function getThemePreference() {
+        return localStorage.getItem('custom-theme') || 'auto';
+    }
+
+    function applyTheme(themeID) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const lightThemeID = document.documentElement.getAttribute('data-light-theme') || 'light';
+        const darkThemeID = document.documentElement.getAttribute('data-dark-theme') || 'dark';
+        const actualThemeID = themeID === 'auto' ? (prefersDark ? darkThemeID : lightThemeID) : themeID;
+
+        document.documentElement.setAttribute('data-bs-theme', actualThemeID);
+        document.documentElement.setAttribute('data-theme-state', themeID);
+    }
+
+    function applySyntaxTheme() {
+        const syntaxTheme = getComputedStyle(document.documentElement)
+            .getPropertyValue('--syntax-highlight-theme').trim().replace(/"/g, '');
+
+        if (!syntaxTheme) return;
+
+        document.querySelectorAll('link[data-highlight-theme]').forEach(link => {
+            link.setAttribute('disabled', 'disabled');
+        });
+
+        const themeLink = document.querySelector(`link[data-highlight-theme="${syntaxTheme}"]`);
+        if (themeLink) {
+            themeLink.removeAttribute('disabled');
+        }
+    }
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        const currentTheme = getThemePreference();
+        if (currentTheme === 'auto') {
+            applyTheme('auto');
+            applySyntaxTheme();
+        }
+    });
+
+    const savedTheme = getThemePreference();
+    applyTheme(savedTheme);
+    applySyntaxTheme();
+})();
+</script>
+    <meta property="og:site_name" content="Rye Water Cycles" />
+    <meta property="og:title" content="Bike repairs in Kilcock" />
+    <meta name="twitter:title" content="Bike repairs in Kilcock" />
+    <meta property="og:description" content="A small bike repair workshop beside the Royal Canal greenway in Kilcock, Co. Kildare." />
+    <meta name="twitter:description" content="A small bike repair workshop beside the Royal Canal greenway in Kilcock, Co. Kildare." />
+    <meta property="og:url" content="https://davidson-ejakita.github.io/rye-water-cycles-swift/" />
+    <meta name="twitter:domain" content="davidson-ejakita.github.io" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:dnt" content="on" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&amp;family=Instrument+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500&amp;display=swap" rel="stylesheet" />
+    <link href="/rye-water-cycles-swift/css/site.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a href="./" class="brand"><span class="mark">RW</span><span class="wordmark">Rye Water Cycles</span></a>
+        <nav aria-label="Main" class="nav">
+          <a href="#services">Services</a>
+          <a href="#process">How it works</a>
+          <a href="#pressure">Tyre guide</a>
+          <a href="#visit">Visit</a>
+        </nav>
+        <span id="status" class="status">Checking hours…</span>
+      </div>
+    </header>
+    <div class="ig-main-content">
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Bike workshop · Kilcock, Co. Kildare</span>
+            <h1><span>Ride in</span><span class="strike">rattling.</span><span>Ride out</span><span class="accent">quiet.</span></h1>
+            <p class="lede">A small repair workshop beside the Royal Canal greenway. Most jobs are done the same day, and every quote is agreed before a spanner touches your bike.</p>
+            <div class="actions">
+              <a href="#visit" class="cta cta-primary">Book a repair</a>
+              <a href="#services" class="cta cta-ghost">See prices</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <svg class="wheel" viewbox="0 0 400 400" aria-hidden="true" focusable="false"> 
+              <g class="wheel-spin"> 
+                <circle cx="200" cy="200" r="190" class="tyre" /> 
+                <circle cx="200" cy="200" r="176" class="rim" /> 
+                <line x1="384.0" y1="200.0" x2="396.0" y2="200.0" class="tread" /> 
+                <line x1="383.3" y1="216.0" x2="395.3" y2="217.1" class="tread" /> 
+                <line x1="381.2" y1="232.0" x2="393.0" y2="234.0" class="tread" /> 
+                <line x1="377.7" y1="247.6" x2="389.3" y2="250.7" class="tread" /> 
+                <line x1="372.9" y1="262.9" x2="384.2" y2="267.0" class="tread" /> 
+                <line x1="366.8" y1="277.8" x2="377.6" y2="282.8" class="tread" /> 
+                <line x1="359.3" y1="292.0" x2="369.7" y2="298.0" class="tread" /> 
+                <line x1="350.7" y1="305.5" x2="360.6" y2="312.4" class="tread" /> 
+                <line x1="341.0" y1="318.3" x2="350.1" y2="326.0" class="tread" /> 
+                <line x1="330.1" y1="330.1" x2="338.6" y2="338.6" class="tread" /> 
+                <line x1="318.3" y1="341.0" x2="326.0" y2="350.1" class="tread" /> 
+                <line x1="305.5" y1="350.7" x2="312.4" y2="360.6" class="tread" /> 
+                <line x1="292.0" y1="359.3" x2="298.0" y2="369.7" class="tread" /> 
+                <line x1="277.8" y1="366.8" x2="282.8" y2="377.6" class="tread" /> 
+                <line x1="262.9" y1="372.9" x2="267.0" y2="384.2" class="tread" /> 
+                <line x1="247.6" y1="377.7" x2="250.7" y2="389.3" class="tread" /> 
+                <line x1="232.0" y1="381.2" x2="234.0" y2="393.0" class="tread" /> 
+                <line x1="216.0" y1="383.3" x2="217.1" y2="395.3" class="tread" /> 
+                <line x1="200.0" y1="384.0" x2="200.0" y2="396.0" class="tread" /> 
+                <line x1="184.0" y1="383.3" x2="182.9" y2="395.3" class="tread" /> 
+                <line x1="168.0" y1="381.2" x2="166.0" y2="393.0" class="tread" /> 
+                <line x1="152.4" y1="377.7" x2="149.3" y2="389.3" class="tread" /> 
+                <line x1="137.1" y1="372.9" x2="133.0" y2="384.2" class="tread" /> 
+                <line x1="122.2" y1="366.8" x2="117.2" y2="377.6" class="tread" /> 
+                <line x1="108.0" y1="359.3" x2="102.0" y2="369.7" class="tread" /> 
+                <line x1="94.5" y1="350.7" x2="87.6" y2="360.6" class="tread" /> 
+                <line x1="81.7" y1="341.0" x2="74.0" y2="350.1" class="tread" /> 
+                <line x1="69.9" y1="330.1" x2="61.4" y2="338.6" class="tread" /> 
+                <line x1="59.0" y1="318.3" x2="49.9" y2="326.0" class="tread" /> 
+                <line x1="49.3" y1="305.5" x2="39.4" y2="312.4" class="tread" /> 
+                <line x1="40.7" y1="292.0" x2="30.3" y2="298.0" class="tread" /> 
+                <line x1="33.2" y1="277.8" x2="22.4" y2="282.8" class="tread" /> 
+                <line x1="27.1" y1="262.9" x2="15.8" y2="267.0" class="tread" /> 
+                <line x1="22.3" y1="247.6" x2="10.7" y2="250.7" class="tread" /> 
+                <line x1="18.8" y1="232.0" x2="7.0" y2="234.0" class="tread" /> 
+                <line x1="16.7" y1="216.0" x2="4.7" y2="217.1" class="tread" /> 
+                <line x1="16.0" y1="200.0" x2="4.0" y2="200.0" class="tread" /> 
+                <line x1="16.7" y1="184.0" x2="4.7" y2="182.9" class="tread" /> 
+                <line x1="18.8" y1="168.0" x2="7.0" y2="166.0" class="tread" /> 
+                <line x1="22.3" y1="152.4" x2="10.7" y2="149.3" class="tread" /> 
+                <line x1="27.1" y1="137.1" x2="15.8" y2="133.0" class="tread" /> 
+                <line x1="33.2" y1="122.2" x2="22.4" y2="117.2" class="tread" /> 
+                <line x1="40.7" y1="108.0" x2="30.3" y2="102.0" class="tread" /> 
+                <line x1="49.3" y1="94.5" x2="39.4" y2="87.6" class="tread" /> 
+                <line x1="59.0" y1="81.7" x2="49.9" y2="74.0" class="tread" /> 
+                <line x1="69.9" y1="69.9" x2="61.4" y2="61.4" class="tread" /> 
+                <line x1="81.7" y1="59.0" x2="74.0" y2="49.9" class="tread" /> 
+                <line x1="94.5" y1="49.3" x2="87.6" y2="39.4" class="tread" /> 
+                <line x1="108.0" y1="40.7" x2="102.0" y2="30.3" class="tread" /> 
+                <line x1="122.2" y1="33.2" x2="117.2" y2="22.4" class="tread" /> 
+                <line x1="137.1" y1="27.1" x2="133.0" y2="15.8" class="tread" /> 
+                <line x1="152.4" y1="22.3" x2="149.3" y2="10.7" class="tread" /> 
+                <line x1="168.0" y1="18.8" x2="166.0" y2="7.0" class="tread" /> 
+                <line x1="184.0" y1="16.7" x2="182.9" y2="4.7" class="tread" /> 
+                <line x1="200.0" y1="16.0" x2="200.0" y2="4.0" class="tread" /> 
+                <line x1="216.0" y1="16.7" x2="217.1" y2="4.7" class="tread" /> 
+                <line x1="232.0" y1="18.8" x2="234.0" y2="7.0" class="tread" /> 
+                <line x1="247.6" y1="22.3" x2="250.7" y2="10.7" class="tread" /> 
+                <line x1="262.9" y1="27.1" x2="267.0" y2="15.8" class="tread" /> 
+                <line x1="277.8" y1="33.2" x2="282.8" y2="22.4" class="tread" /> 
+                <line x1="292.0" y1="40.7" x2="298.0" y2="30.3" class="tread" /> 
+                <line x1="305.5" y1="49.3" x2="312.4" y2="39.4" class="tread" /> 
+                <line x1="318.3" y1="59.0" x2="326.0" y2="49.9" class="tread" /> 
+                <line x1="330.1" y1="69.9" x2="338.6" y2="61.4" class="tread" /> 
+                <line x1="341.0" y1="81.7" x2="350.1" y2="74.0" class="tread" /> 
+                <line x1="350.7" y1="94.5" x2="360.6" y2="87.6" class="tread" /> 
+                <line x1="359.3" y1="108.0" x2="369.7" y2="102.0" class="tread" /> 
+                <line x1="366.8" y1="122.2" x2="377.6" y2="117.2" class="tread" /> 
+                <line x1="372.9" y1="137.1" x2="384.2" y2="133.0" class="tread" /> 
+                <line x1="377.7" y1="152.4" x2="389.3" y2="149.3" class="tread" /> 
+                <line x1="381.2" y1="168.0" x2="393.0" y2="166.0" class="tread" /> 
+                <line x1="383.3" y1="184.0" x2="395.3" y2="182.9" class="tread" /> 
+                <line x1="216.0" y1="200.0" x2="346.6" y2="110.1" class="spoke" /> 
+                <line x1="215.7" y1="203.1" x2="326.3" y2="316.8" class="spoke" /> 
+                <line x1="214.8" y1="206.1" x2="369.9" y2="173.1" class="spoke" /> 
+                <line x1="213.3" y1="208.9" x2="272.0" y2="356.2" class="spoke" /> 
+                <line x1="211.3" y1="211.3" x2="367.3" y2="240.1" class="spoke" /> 
+                <line x1="208.9" y1="213.3" x2="206.7" y2="371.9" class="spoke" /> 
+                <line x1="206.1" y1="214.8" x2="339.2" y2="301.1" class="spoke" /> 
+                <line x1="203.1" y1="215.7" x2="140.4" y2="361.4" class="spoke" /> 
+                <line x1="200.0" y1="216.0" x2="289.9" y2="346.6" class="spoke" /> 
+                <line x1="196.9" y1="215.7" x2="83.2" y2="326.3" class="spoke" /> 
+                <line x1="193.9" y1="214.8" x2="226.9" y2="369.9" class="spoke" /> 
+                <line x1="191.1" y1="213.3" x2="43.8" y2="272.0" class="spoke" /> 
+                <line x1="188.7" y1="211.3" x2="159.9" y2="367.3" class="spoke" /> 
+                <line x1="186.7" y1="208.9" x2="28.1" y2="206.7" class="spoke" /> 
+                <line x1="185.2" y1="206.1" x2="98.9" y2="339.2" class="spoke" /> 
+                <line x1="184.3" y1="203.1" x2="38.6" y2="140.4" class="spoke" /> 
+                <line x1="184.0" y1="200.0" x2="53.4" y2="289.9" class="spoke" /> 
+                <line x1="184.3" y1="196.9" x2="73.7" y2="83.2" class="spoke" /> 
+                <line x1="185.2" y1="193.9" x2="30.1" y2="226.9" class="spoke" /> 
+                <line x1="186.7" y1="191.1" x2="128.0" y2="43.8" class="spoke" /> 
+                <line x1="188.7" y1="188.7" x2="32.7" y2="159.9" class="spoke" /> 
+                <line x1="191.1" y1="186.7" x2="193.3" y2="28.1" class="spoke" /> 
+                <line x1="193.9" y1="185.2" x2="60.8" y2="98.9" class="spoke" /> 
+                <line x1="196.9" y1="184.3" x2="259.6" y2="38.6" class="spoke" /> 
+                <line x1="200.0" y1="184.0" x2="110.1" y2="53.4" class="spoke" /> 
+                <line x1="203.1" y1="184.3" x2="316.8" y2="73.7" class="spoke" /> 
+                <line x1="206.1" y1="185.2" x2="173.1" y2="30.1" class="spoke" /> 
+                <line x1="208.9" y1="186.7" x2="356.2" y2="128.0" class="spoke" /> 
+                <line x1="211.3" y1="188.7" x2="240.1" y2="32.7" class="spoke" /> 
+                <line x1="213.3" y1="191.1" x2="371.9" y2="193.3" class="spoke" /> 
+                <line x1="214.8" y1="193.9" x2="301.1" y2="60.8" class="spoke" /> 
+                <line x1="215.7" y1="196.9" x2="361.4" y2="259.6" class="spoke" /> 
+                <circle cx="200" cy="200" r="22" class="hub" /> 
+                <circle cx="200" cy="200" r="6" class="axle" /> 
+                <rect x="197" y="22" width="6" height="16" rx="2" class="valve" /> 
+              </g>
+            </svg>
+            <dl class="hero-stats">
+              <div>
+                <dt>
+                  Spokes trued
+                </dt>
+                <dd>
+                  32
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  From
+                </dt>
+                <dd>
+                  €15
+                </dd>
+              </div>
+              <div>
+                <dt>
+                  Turnaround
+                </dt>
+                <dd>
+                  48h max
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Price list</span>
+            <h2>Workshop services</h2>
+            <p class="section-intro">Labour prices include VAT. Parts are quoted separately and only fitted with your OK. Tap jobs to build a rough quote.</p>
+          </div>
+          <div class="services-layout">
+            <div class="services-grid">
+              <button type="button" aria-pressed="false" data-price="95" data-minutes="180" class="svc svc-featured"><span class="svc-top"><span class="svc-name">Full service</span><span class="svc-price">€95</span></span><span class="svc-detail">Drivetrain stripped and degreased, bearings checked, brakes and gears set up from scratch.</span><span class="svc-meta"><span>Any bike · 3h</span><span class="svc-add">Add</span></span></button>
+              <button type="button" aria-pressed="false" data-price="35" data-minutes="45" class="svc"><span class="svc-top"><span class="svc-name">Gear tune</span><span class="svc-price">€35</span></span><span class="svc-detail">Derailleurs indexed, limit screws set and the hanger checked for alignment.</span><span class="svc-meta"><span>Any bike · 45 min</span><span class="svc-add">Add</span></span></button>
+              <button type="button" aria-pressed="false" data-price="15" data-minutes="20" class="svc"><span class="svc-top"><span class="svc-name">Puncture repair</span><span class="svc-price">€15</span></span><span class="svc-detail">New tube or patch, with the tyre checked for glass and flints.</span><span class="svc-meta"><span>Per wheel · 20 min</span><span class="svc-add">Add</span></span></button>
+              <button type="button" aria-pressed="false" data-price="30" data-minutes="40" class="svc"><span class="svc-top"><span class="svc-name">Brake bleed</span><span class="svc-price">€30</span></span><span class="svc-detail">Fresh mineral oil or DOT fluid, and new pads if they are under 1 mm.</span><span class="svc-meta"><span>Per end · 40 min</span><span class="svc-add">Add</span></span></button>
+              <button type="button" aria-pressed="false" data-price="25" data-minutes="30" class="svc"><span class="svc-top"><span class="svc-name">Wheel true</span><span class="svc-price">€25</span></span><span class="svc-detail">Lateral and radial true with spoke tension evened out.</span><span class="svc-meta"><span>Per wheel · 30 min</span><span class="svc-add">Add</span></span></button>
+              <button type="button" aria-pressed="false" data-price="40" data-minutes="40" class="svc"><span class="svc-top"><span class="svc-name">Tubeless setup</span><span class="svc-price">€40</span></span><span class="svc-detail">Rim tape, valve and sealant. Bring your own tyres or choose from ours.</span><span class="svc-meta"><span>Per wheel · 40 min</span><span class="svc-add">Add</span></span></button>
+              <button type="button" aria-pressed="false" data-price="45" data-minutes="60" class="svc"><span class="svc-top"><span class="svc-name">E-bike check</span><span class="svc-price">€45</span></span><span class="svc-detail">Motor diagnostic, firmware update and a battery health report.</span><span class="svc-meta"><span>Hub or mid-drive · 1h</span><span class="svc-add">Add</span></span></button>
+              <button type="button" aria-pressed="false" data-price="30" data-minutes="30" class="svc"><span class="svc-top"><span class="svc-name">Chain and cassette</span><span class="svc-price">€30</span></span><span class="svc-detail">Wear measured at 0.5% and 0.75%, new parts fitted and shifted in.</span><span class="svc-meta"><span>Labour only · 30 min</span><span class="svc-add">Add</span></span></button>
+            </div>
+            <aside aria-live="polite" class="quote">
+              <span class="eyebrow">Your quote</span>
+              <p><span id="quote-total" class="quote-total">€0</span></p>
+              <p id="quote-meta" class="quote-meta">Nothing picked yet</p>
+              <a href="#visit" class="cta cta-primary">Book these jobs</a>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section id="process" class="band band-alt">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">How it works</span>
+            <h2>Three steps, no surprises</h2>
+          </div>
+          <ol class="steps">
+            <li><h3>Drop it in</h3><p>No appointment needed for small jobs. For a full service, book a slot so we can have parts ready.</p></li>
+            <li><h3>Agree the quote</h3><p>We check the bike over with you and text a fixed price before any work starts.</p></li>
+            <li><h3>Ride it away</h3><p>We text when it is ready. Every job gets a test ride and a written note of what was done.</p></li>
+          </ol>
+        </div>
+      </section>
+      <section id="pressure" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="eyebrow">Free advice</span>
+            <h2>Tyre pressure guide</h2>
+            <p class="section-intro">Starting pressures for a 75 kg rider on dry roads. Heavier riders add about 1 psi per 3 kg. Never go above the limit printed on the sidewall.</p>
+          </div>
+          <div class="table-scroll">
+            <table class="pressure">
+              <thead>
+                <tr>
+                  <th>Tyre width</th>
+                  <th>Used for</th>
+                  <th>Front</th>
+                  <th>Rear</th>
+                  <th class="bar-col">Pressure</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="mono">25 mm</td>
+                  <td>Road racing</td>
+                  <td class="mono">81 psi</td>
+                  <td class="mono">88 psi</td>
+                  <td class="bar-col"><span style="--v: 88" aria-hidden="true" class="meter"></span></td>
+                </tr>
+                <tr>
+                  <td class="mono">28 mm</td>
+                  <td>Road</td>
+                  <td class="mono">66 psi</td>
+                  <td class="mono">72 psi</td>
+                  <td class="bar-col"><span style="--v: 72" aria-hidden="true" class="meter"></span></td>
+                </tr>
+                <tr>
+                  <td class="mono">32 mm</td>
+                  <td>Endurance road</td>
+                  <td class="mono">52 psi</td>
+                  <td class="mono">56 psi</td>
+                  <td class="bar-col"><span style="--v: 56" aria-hidden="true" class="meter"></span></td>
+                </tr>
+                <tr>
+                  <td class="mono">38 mm</td>
+                  <td>Commuter</td>
+                  <td class="mono">38 psi</td>
+                  <td class="mono">41 psi</td>
+                  <td class="bar-col"><span style="--v: 41" aria-hidden="true" class="meter"></span></td>
+                </tr>
+                <tr>
+                  <td class="mono">45 mm</td>
+                  <td>Gravel</td>
+                  <td class="mono">29 psi</td>
+                  <td class="mono">31 psi</td>
+                  <td class="bar-col"><span style="--v: 31" aria-hidden="true" class="meter"></span></td>
+                </tr>
+                <tr>
+                  <td class="mono">57 mm</td>
+                  <td>Trail (2.25 in)</td>
+                  <td class="mono">18 psi</td>
+                  <td class="mono">20 psi</td>
+                  <td class="bar-col"><span style="--v: 20" aria-hidden="true" class="meter"></span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+      <section id="visit" class="band band-dark">
+        <div class="wrap visit-grid">
+          <div>
+            <div class="section-head">
+              <span class="eyebrow">Visit</span>
+              <h2>Find the workshop</h2>
+              <p class="section-intro">Unit 4, Mill Lane, Kilcock, Co. Kildare. Two minutes from the canal path and the train station. This is a demo, so the address is made up.</p>
+            </div>
+            <p class="contact"><span class="eyebrow">Phone</span><span class="big-contact">01 555 0142</span></p>
+          </div>
+          <div class="hours-card">
+            <table class="hours">
+              <tbody>
+                <tr data-weekday="1" class="closed">
+                  <td>Monday</td>
+                  <td class="mono">Closed</td>
+                </tr>
+                <tr data-weekday="2">
+                  <td>Tuesday</td>
+                  <td class="mono">9am – 6pm</td>
+                </tr>
+                <tr data-weekday="3">
+                  <td>Wednesday</td>
+                  <td class="mono">9am – 6pm</td>
+                </tr>
+                <tr data-weekday="4">
+                  <td>Thursday</td>
+                  <td class="mono">9am – 8pm</td>
+                </tr>
+                <tr data-weekday="5">
+                  <td>Friday</td>
+                  <td class="mono">9am – 6pm</td>
+                </tr>
+                <tr data-weekday="6">
+                  <td>Saturday</td>
+                  <td class="mono">9am – 5pm</td>
+                </tr>
+                <tr data-weekday="0" class="closed">
+                  <td>Sunday</td>
+                  <td class="mono">Closed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="site-footer">
+      <div class="wrap footer-row">
+        <span>© Rye Water Cycles. A demo website for a made-up business.</span>
+        <span>Built in Swift with Ignite</span>
+      </div>
+    </footer>
+    <script src="js/site.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/ignite-core.js"></script>
+  </body>
+</html>

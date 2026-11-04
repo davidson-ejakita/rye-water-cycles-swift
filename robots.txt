@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://davidson-ejakita.github.io/rye-water-cycles-swift/sitemap.xml
